@@ -8,19 +8,19 @@
 
 //process
 function reverseString(str: string): string {
-    if (str === '') {
-      return str
-    } else {
-      return reverseString(str.slice(1)) + str.slice(0, 1)
-    }
+  if (str === '') {
+    return str
+  } else {
+    return reverseString(str.slice(1)) + str.slice(0, 1)
   }
-  
-  // Input
-  const aString = 'recursion'
-  
-  // Output
-  console.log()
-  console.log(`The original string is: ${aString}`)
-  console.log(`The reversed string is: ${reverseString(aString)}`)
-  
-  console.log('\nDone.')
+}
+
+// Input
+const aString = 'recursion'
+
+// Output
+console.log()
+console.log(`The original string is: ${aString}`)
+console.log(`The reversed string is: ${reverseString(aString)}`)
+
+console.log('\nDone.')
